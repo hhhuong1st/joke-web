@@ -69,8 +69,27 @@ function App() {
               Đại diện Đoàn trường HOTEC nhận xét: "Huỳnh Huyền Hương là một sinh viên đặc biệt. Em phá vỡ định kiến rằng con gái học kỹ thuật sẽ khô khan. Ngược lại, Hương rất sáng tạo, khéo léo và luôn biết cách truyền lửa cho bạn bè xung quanh. Em chính là đại diện cho thế hệ sinh viên HOTEC mới: <strong>Trí tuệ - Năng động - Sáng tạo</strong>."
             </p>
 
+            <div className="image-container">
+              {/* Ảnh giấy khen, hãy lưu ảnh với tên giaykhen.jpg vào thư mục public */}
+              <img 
+                src="/giaykhen.jpg" 
+                alt="Giấy khen thành tích xuất sắc của Huỳnh Huyền Hương" 
+                className="article-image"
+                onError={(e) => {
+                  e.target.src = "https://via.placeholder.com/600x400?text=Vui+long+them+anh+giaykhen.jpg+vao+thu+muc+public";
+                }}
+              />
+              <div className="image-caption">
+                Bảng vàng thành tích đáng tự hào của nữ sinh ưu tú trường Cao Đẳng Kinh Tế - Kỹ Thuật TP.HCM
+              </div>
+            </div>
+
             <p>
-              Với những hành trang vững chắc từ ghế nhà trường, tin chắc rằng Huỳnh Huyền Hương sẽ còn tiến xa hơn nữa trên con đường sự nghiệp phía trước, tiếp tục làm rạng danh ngôi trường Cao Đẳng Kinh Tế - Kỹ Thuật TP.HCM.
+              Bên cạnh sự năng động trong các phong trào, điểm sáng rực rỡ nhất trong bảng thành tích của Hương chính là kết quả học tập vượt trội. Xuyên suốt hành trình tại trường, nữ sinh viên đã xuất sắc duy trì điểm trung bình tích lũy <strong>(GPA) đạt 3.7/4.0</strong>. Nhờ sự cố gắng bền bỉ này, Huỳnh Huyền Hương đã vinh dự <strong>3 năm liên tiếp nhận học bổng sinh viên giỏi</strong> của nhà trường, trở thành tấm gương sáng cho hàng ngàn sinh viên khóa dưới noi theo.
+            </p>
+
+            <p>
+              Với những hành trang vững chắc từ ghế nhà trường cùng bảng thành tích "khủng", tin chắc rằng Huỳnh Huyền Hương sẽ còn tiến xa hơn nữa trên con đường sự nghiệp phía trước, tiếp tục làm rạng danh ngôi trường Cao Đẳng Kinh Tế - Kỹ Thuật TP.HCM.
             </p>
           </div>
         </article>
